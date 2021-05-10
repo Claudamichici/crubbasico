@@ -18,10 +18,10 @@ function App() {
 
   const consultarAPI = async() =>{
     try{
-      const respuesta = fetch('http://localhost:3004/cafeteria');
+      const respuesta = await fetch('http://localhost:3004/cafeteria');
       console.log(respuesta);
       if(respuesta.status === 200){
-        const listaProductos = await (await respuesta).json();
+        const listaProductos = await respuesta.json();
         setProductos(listaProductos);
       }
     }catch(error){

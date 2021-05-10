@@ -83,6 +83,18 @@
       "precioProducto": null,
       "categoria": "bebidaFria",
       "id": 14
+    },
+    {
+      "nombreProducto": "te",
+      "precioProducto": 120,
+      "categoria": "bebidaCaliente",
+      "id": 15
+    },
+    {
+      "nombreProducto": "tortilla",
+      "precioProducto": 30,
+      "categoria": "salado",
+      "id": 16
     }
   ]
 }
