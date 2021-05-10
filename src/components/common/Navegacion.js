@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
 
 const Navegacion = () => {
     return (

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ListarProductos = () => {
-    return (
-        <div>
-            <h1>Lista de Productos</h1>
-        </div>
-    );
+  return (
+    <div>
+      Pagina lista de producto
+    </div>
+  );
 };
 
-export default ListarProductos; 
+export default ListarProductos;
