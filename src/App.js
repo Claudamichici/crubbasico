@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react';
 import EditarProducto from './components/Productos/EditarProducto';
 
 function App() {
+  const URL = process.env.REACT_APP_API_URL;
   const [productos, setProductos] = useState([]);
 
   useEffect(()=>{
@@ -18,7 +19,7 @@ function App() {
 
   const consultarAPI = async() =>{
     try{
-      const respuesta = await fetch('http://localhost:3004/cafeteria');
+      const respuesta = await fetch(URL);
       console.log(respuesta);
       if(respuesta.status === 200){
         const listaProductos = await respuesta.json();
@@ -37,7 +38,7 @@ function App() {
           <Inicio></Inicio>
         </Route>
         <Route exact path='/productos'>
-          <ListarProductos productos ={productos}></ListarProductos>
+          <ListarProductos productos ={productos} consultarAPI={consultarAPI}></ListarProductos>
         </Route>
         <Route exact path='/productos/nuevo'>
           <AgregarProducto consultarAPI = {consultarAPI}></AgregarProducto>
