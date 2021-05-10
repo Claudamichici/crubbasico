@@ -1,12 +1,12 @@
 import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
 
-const ItemProducto = () => {
+const ItemProducto = (props) => {
   return (
     <div>
       <ListGroup.Item className="d-flex justify-content-between">
         <p>
-          Nombre del producto<span className="font-weight-bold">$200</span>
+          {props.producto.nombreProducto} <span className="font-weight-bold"> $ {props.producto.precioProducto}</span>
         </p>
         <div>
           <Button variant="warning" className="mr-3">Editar</Button>

@@ -95,6 +95,12 @@
       "precioProducto": 30,
       "categoria": "salado",
       "id": 16
+    },
+    {
+      "nombreProducto": "capuccino",
+      "precioProducto": 210,
+      "categoria": "bebidaFria",
+      "id": 17
     }
   ]
 }
